@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrese</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="https://kit.fontawesome.com/571ace2bcd.js" crossorigin="anonymous">
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="acercade.html">Acerca de</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="registrese.html">Registrese</a>
+			<a href="sucursales.html">Sucursales</a>
+		</nav>
+		<h1>La cocina de Jose</h1>
+	</header>
+	<main>
+		<h2>Formulario de registro</h2>
+		<form action="show_data.html" method="GET" name="formulario">
+			<!-- datos -->
+			<!-- nombre -->
+			<div class="espacio"><label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" class="espacio" placeholder="Introduzca su nombre aqui"></div>
+            <!-- apellido -->
+            <div class="espacio"><label for="apellido">Apellido: </label><input type="text" name="apellido" id="apellido" class="espacio" placeholder="Introduzca su apellido aqui"></div>
+            <!-- direccion -->
+            <div>Direccion:</div>
+            <div class="espacio"><label for="calle">Calle: </label><input type="text" name="" id="calle" class="espacio" placeholder="Introduzca su calle aqui"></div>
+            <!-- ciudad -->
+            <div class="espacio"><label for="ciudad">Ciudad: </label><input type="text" name="ciudad" id="ciudad" class="espacio" placeholder="Introduzca su ciudad aqui"></div>
+            <!-- codigo postal -->
+            <div class="espacio"><label for="cp">Codigo postal: </label><input type="text" name="cp" id="cp" class="espacio" placeholder="Introduzca su CP aqui"></div>
+            <!-- fecha de nacimiento -->
+            <div class="espacio"><label for="fecha">Fecha de nacimiento (mm/dd/yyyy): </label><input type="text" name="fecha" id="fecha" class="espacio" placeholder="Introduzca la fecha aqui"></div>
+                <!-- radio -->
+            <!-- hombre -->
+            <p>Genero: <span><input 
+            type="radio" name="genero" id="hombre" value="hombre"><label for="hombre">Hombre</label></span>
+            <!-- mujer -->
+            <span><input type="radio" name="genero" id="mujer" value="mujer"><label for="mujer">Mujer</label></span>
+            <!-- otro -->
+            <span><input type="radio" name="genero" id="otro" value="otro"><label for="otro">Otro</label></span></p>
+            <!-- checkbox -->
+            <!-- primario -->
+            <p class="">Estudios: <span><input type="checkbox" name="primario" id="primario"><label for="primario">Primario</label></span>
+            <!-- secundario -->
+            <span><input type="checkbox" name="secundario" id="secundario"><label for="secundario">Secundario</label></span>
+            <!-- terciario -->
+            <span><input type="checkbox" name="terciario" id="terciario"><label for="terciario">Terciario</label></span>
+            <!-- universitario -->
+            <span><input type="checkbox" name="universitario" id="universitario"><label for="universitario">Universitario</label></span>
+                <!-- otro -->
+            <span><input type="checkbox" name="otro" id="otro"><label for="otro">Otro</label></span>
+            </p>
+                <!-- textbox -->
+            
+                <!-- submit -->
+            <input type="submit" value="Enviar">
+                <!-- instrucciones -->
+            <p>Si usted hace click en el boton "Enviar", la informacion sera inviada a la pagina "show_data.html".</p>
+        </form>
+	</main>
+	<footer>
+		<p>Enlaces a las redes sociales </p>
+        <!-- icono twitter -->
+		<a href="https://www.twitter.com" target="_blank">
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <!-- icono face -->
+        <a href="https://www.facebook.com" target="_blank">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <!-- icono pinter -->
+        <a href="https://www.pinterest" target="_blank">
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+        </a>
+        <!-- icono instagram -->
+        <a href="https://www.instagram.com" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <!-- icono linkedin -->
+        <a href="https://www.linkedin.com" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <p>Derechos reservados @2021</p>
+	</footer>
+	<script src="script.js">
+
+	</script>
+</body>
+
+</html>

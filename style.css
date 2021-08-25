@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: verdana;
+}
+body a {
+    text-decoration: none;
+}
+main {
+    padding-left: 10px;
+}
+header, footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+header nav {
+    text-align: left;
+    padding-top: 10px;
+}
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+footer a {
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 2px;
+    padding-top: 0;
+    border-radius: 5%;
+    margin: 5px;
+}
+iframe {
+    margin: 10px
+}
+form div {
+    margin: 10px
+}
+h1 {
+    margin: 0;
+    padding-bottom: 5px;
+    color: white;
+}
+h2 {
+    margin-top: 0;
+    padding-top: 10px
+}
+table {
+    margin-bottom: 20px
+}
+.foto {
+    text-align: center
+}
+.imagen {
+    text-align: center
+}
