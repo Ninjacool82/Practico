@@ -9,7 +9,7 @@ main {
     padding-left: 10px;
 }
 header, footer {
-    background-color: black;
+    background-color: darkslategray;
     text-align: center;
     color: white;
 }
