@@ -8,7 +8,8 @@ body a {
 main {
     padding-left: 10px;
 }
-header, footer {
+header,
+footer {
     background-color: darkslategray;
     text-align: center;
     color: white;
@@ -34,10 +35,10 @@ nav a {
     margin: 5px;
 }
 iframe {
-    margin: 10px
+    margin: 10px;
 }
 form div {
-    margin: 10px
+    margin: 10px;
 }
 h1 {
     margin: 0;
@@ -46,14 +47,14 @@ h1 {
 }
 h2 {
     margin-top: 0;
-    padding-top: 10px
+    padding-top: 10px;
 }
 table {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 .foto {
-    text-align: center
+    text-align: center;
 }
 .imagen {
-    text-align: center
+    text-align: center;
 }

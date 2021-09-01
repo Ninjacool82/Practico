@@ -1,89 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Receta</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script
+            src="https://kit.fontawesome.com/571ace2bcd.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Receta</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<script src="https://kit.fontawesome.com/571ace2bcd.js" crossorigin="anonymous">
-
-	</script>
-</head>
-
-<body>
-	<header>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="acercade.html">Acerca de</a>
-			<a href="contacto.html">Contacto</a>
-			<a href="registrese.html">Registrese</a>
-			<a href="sucursales.html">Sucursales</a>
-		</nav>
-		<h1>La cocina de Jose</h1>
-	</header>
-	<main>
-		<h2>Sopa crema de choclo</h2>
-		<div class="imagen">
-			<img src="data:image/jpeg;base64,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" alt="sopa de choclo"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores excepturi placeat corporis.</p>
-        <ul>
-            <li>Ingrediente</li>
-            <li>Ingrediente</li>
-            <li>Ingrediente</li>
-            <li>Ingrediente</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, iste a doloremque molestias vero suscipit! Ab dicta quo asperiores, nisi optio molestias numquam nulla, placeat facilis iste sapiente, labore iure magni unde modi autem quaerat.</p>
-        <table>
-            <tr>
-                <th>Ingrediente</th>
-                <th>Cantidad</th>
-            </tr>
-            <tr>
-                <td>hola</td>
-                <td>hola</td>
-            </tr>
-            <tr>
-                <td>hola</td>
-                <td>hola</td>
-            </tr>
-            <tr>
-                <td>hola</td>
-                <td>hola</td>
-            </tr>
-            <tr>
-                <td>hola</td>
-                <td>hola</td>
-            </tr>
-        </table>
-	</main>
-    <footer>
-		<p>Enlaces a las redes sociales </p>
-        <!-- icono twitter -->
-		<a href="https://www.twitter.com" target="_blank">
-			<i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <!-- icono face -->
-        <a href="https://www.facebook.com" target="_blank">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <!-- icono pinter -->
-        <a href="https://www.pinterest" target="_blank">
-        <i class="fa fa-pinterest" aria-hidden="true"></i>
-        </a>
-        <!-- icono instagram -->
-        <a href="https://www.instagram.com" target="_blank">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <!-- icono linkedin -->
-        <a href="https://www.linkedin.com" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <p>Derechos reservados @2021</p>
-	</footer>
-	<script src="script.js">
-
-	</script>
-</body>
-
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="registrese.html">Registrese</a>
+                <a href="sucursales.html">Sucursales</a>
+            </nav>
+            <h1>La cocina de Jose</h1>
+        </header>
+        <main>
+            <h2>Sopa crema de choclo</h2>
+            <div class="imagen">
+                <img src="image/sopa.jfif" alt="sopa de choclo"/>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                excepturi placeat corporis.
+            </p>
+            <ul>
+                <li>Ingrediente</li>
+                <li>Ingrediente</li>
+                <li>Ingrediente</li>
+                <li>Ingrediente</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, iste a doloremque molestias vero suscipit! Ab dicta quo
+                asperiores, nisi optio molestias numquam nulla, placeat facilis
+                iste sapiente, labore iure magni unde modi autem quaerat.
+            </p>
+            <table>
+                <tr>
+                    <th>Ingrediente</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>hola</td>
+                    <td>hola</td>
+                </tr>
+                <tr>
+                    <td>hola</td>
+                    <td>hola</td>
+                </tr>
+                <tr>
+                    <td>hola</td>
+                    <td>hola</td>
+                </tr>
+                <tr>
+                    <td>hola</td>
+                    <td>hola</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>Enlaces a las redes sociales</p>
+            <!-- icono twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <!-- icono face -->
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <!-- icono pinter -->
+            <a href="https://www.pinterest" target="_blank">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+            </a>
+            <!-- icono instagram -->
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <!-- icono linkedin -->
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <p>Derechos reservados @2021</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
